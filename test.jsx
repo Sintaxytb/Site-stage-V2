@@ -1,4 +1,7 @@
-mport React, {useState} from 'react';
+mport
+React, {useState}
+from
+'react';
 const InternshipPortfolio = () => {
     const [activeSection, setActiveSection] = useState('about');
     const [formData, setFormData] = useState({
