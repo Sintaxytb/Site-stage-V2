@@ -8,22 +8,21 @@
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <div class="fr-notice fr-notice--warning">
-        <div class="fr-container">
-            <div class="fr-notice__body">
-                <p>
-                    <span class="fr-notice__title">Titre du bandeau d'avertissement</span>
-                    <span class="fr-notice__desc">Texte de description lorem ipsum sit consectetur adipiscing.</span>
-                    <a target="_blank" rel="noopener external" title="[À MODIFIER - Intitulé] - nouvelle fenêtre" href="#" class="fr-notice__link">Lien de consultation</a>
-                </p>
-                <button title="Masquer le message" onclick="const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)" id="button-1305" class="fr-btn--close fr-btn">Masquer le message</button>
-            </div>
-        </div>
-    </div>
 </head>
 <body>
 <div id="root"></div>
-
+<div class="fr-notice fr-notice--alert">
+    <div class="fr-container">
+        <div class="fr-notice__body">
+            <p>
+                <span class="fr-notice__title">Titre du bandeau d'alerte</span>
+                <span class="fr-notice__desc">Texte de description lorem ipsum sit consectetur adipiscing.</span>
+                <a target="_blank" rel="noopener external" title="[À MODIFIER - Intitulé] - nouvelle fenêtre" href="#" class="fr-notice__link">Lien de consultation</a>
+            </p>
+            <button title="Masquer le message" onclick="const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)" id="button-1308" class="fr-btn--close fr-btn">Masquer le message</button>
+        </div>
+    </div>
+</div>
 <script type="text/babel">
     // TODO: implement the download functionality for the CV
     class InternshipPortfolio extends React.Component {
