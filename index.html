@@ -8,9 +8,18 @@
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Basic styling for DSFR notice if needed, or remove if DSFR CSS isn't loaded -->
+    <style>
+        .fr-notice { /* Basic visibility, remove if DSFR CSS is loaded */
+            /* display: none; */ /* Uncomment this line to hide via CSS instead of removing HTML */
+        }
+    </style>
 </head>
 <body>
 <div id="root"></div>
+
+<!-- Removed the fr-notice alert div block -->
+<!--
 <div class="fr-notice fr-notice--alert">
     <div class="fr-container">
         <div class="fr-notice__body">
@@ -23,6 +32,8 @@
         </div>
     </div>
 </div>
+-->
+
 <script type="text/babel">
     // TODO: implement the download functionality for the CV
     class InternshipPortfolio extends React.Component {
