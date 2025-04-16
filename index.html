@@ -29,6 +29,58 @@
 </div>
 -->
 
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f7fc;
+        color: #333;
+    }
+
+    .fr-notice {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+    .fr-notice__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fr-notice__title {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .fr-notice__desc {
+        margin-right: 10px;
+    }
+
+    .fr-notice__link {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .fr-notice__link:hover {
+        text-decoration: underline;
+    }
+
+    .fr-btn--close {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: #666;
+    }
+
+    .fr-btn--close:hover {
+        color: #333;
+    }
+</style>
+
+
 <script type="text/babel">
     // TODO: implement the download functionality for the CV
     class InternshipPortfolio extends React.Component {
